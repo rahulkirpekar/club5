@@ -1,0 +1,38 @@
+				Modifiers
+				   |
+1) Access Modifiers			2) Non-Access Modifiers	
+---------------------			-------------------------
+private					final,static,abstract,strictfp,synchronized,native,volatile,transient
+default
+protected
+public	
+
+static:---[dm's,inner class , method]
+
+
+
+
+500 Student---[rno name std 
+
+	static String schoolName]="DPS"
+
+
+	s1		s2
+	rno 		rno ------UNIQUE
+	name 		name------UNIQUE 
+	std 		std ------UNIQUE
+	schoolName	schoolName--GENERAL=="DPS"
+
+
+	// static way 
+	Student.schoolName = "DPS"; 
+
+
+4) obj method---static
+3) object create---[non static dm's]
+2) main 
+1) static dm's
+
+
+
+
