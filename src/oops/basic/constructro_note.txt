@@ -1,0 +1,11 @@
+Constructor:-
+-------------
+
+Student s;// 1) memory allocation + 2) object dm's initialise
+
+s.disp();
+
+
+
+	    |			   |
+	1) Default		2) Para  		3)Copy
