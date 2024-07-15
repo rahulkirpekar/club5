@@ -1,0 +1,160 @@
+Inheritance:-
+------------
+
+	A(no1)--Parent/Super/base class
+	|
+	B(no2)---Child/Derived/Sub class
+
+A obj = new A();// no1
+B obj = new B();// no1,no2
+
+
+
+
+					[Inheritance]
+					    |
+			---------------------------------------------
+			|					    |	
+		      [class]					[interface](abstraction)
+			|					    |	
+    -------------------------------------		   --------------------	
+    |			|		| 		    |		     |	
+1) Single	2) MultiLevel	3) Hierarchical		4) Multiple	5) Hybrid-->[Multiple]	
+----------	-------------	-------------		-------------	----------------------	
+    A(no1)		A(no1)		A(no1)			A(no1)	B(no1)
+    |			|		|			|	|
+    B(no2)		B(no2)	    ---------			----------
+			|	    |	    | 			     |	
+			C(no3)	    B(no2)  C(no3)		     C(no3)
+								A obj;// no1
+		A obj;// no1		A obj;// no1		B obj;// no2
+		B obj;// no1,no2	B obj;// no1,no2	C obj;// no1,no2,no3		
+		C obj;// no1,no2,no3    C obj;// no1,no3
+		
+
+1) Single:-
+-------------
+
+
+		Person(name)
+		  |
+		Employee(id,salary,dsgn,orgname)
+
+Employee e = new Employee();
+
+e.	
+
+
+
+class A
+{
+	int no1;
+}
+
+class B extends A
+{
+	//int no1;
+
+	public static void main(String args[])
+	{
+		B obj = new B();
+
+		obj.no1=10;
+		obj.no2=20;
+
+		
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2) MultiLevel:-
+-------------
+
+		Person(name)
+		  |
+		Employee(id,orgname)
+		  |
+		TechEmployee(salary,dsgn)
+
+class Person
+{
+	String name;
+}
+class Employee extends Person
+{
+	int id;
+	String orgname;
+
+}
+class TechEmployee extends Employee
+{
+	int salary;
+	String dsgn;
+	void scanData()
+	{
+
+	}
+	void dispData()
+	{
+
+	}
+	public static void main()
+	{
+		TechEmployee  t = new TechEmployee ();
+		t.scan();
+		t.disp();	
+	}
+}
+
+
+
+3) Hierarchical:-
+---------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 

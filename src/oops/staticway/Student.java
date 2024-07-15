@@ -9,6 +9,13 @@ public class Student
 	int std;
 	static String schoolName;
 	
+	static int count=0;
+	
+	public Student() 
+	{
+		count++;
+	}
+	
 	public static void setSchoolName() 
 	{
 		Scanner sc = new Scanner(System.in);
@@ -18,18 +25,20 @@ public class Student
 	public static void main(String[] args) 
 	{
 		Student.setSchoolName();
-//		
-//		Student s[] = new Student[5];
-//		
-//		for (int i = 0; i < s.length; i++) 
-//		{
-//			s[i] = new Student();
-//			s[i].scan();
-//		}
-//		for (int i = 0; i < s.length; i++) 
-//		{
-//			s[i].disp();
-//		}
+		
+		Student s[] = new Student[5];
+		
+		for (int i = 0; i < s.length; i++) 
+		{
+			s[i] = new Student();
+			s[i].scan();
+		}
+		for (int i = 0; i < s.length; i++) 
+		{
+			s[i].disp();
+		}
+		
+		System.out.println("Total Student object created : " + count);
 	}
 	private void disp() 
 	{
