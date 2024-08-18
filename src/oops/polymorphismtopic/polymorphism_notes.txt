@@ -1,0 +1,119 @@
+Polymorphism:- Ability to take more than one form(method);
+-------------
+			Type of Polymorphism
+			---------------------
+	1) compileTime			2) RunTime
+	-----------------		-----------------
+	==> static Binding		==> Dynamic Binding
+	==> Early Binding		==> Late Binding
+Example:-			Example:-
+---------			---------
+	Method Overloadding		===> Method Overridding
+
+Type Pramotion Rule:-
+----------------------
+boolean---X
+			byte
+			 |		
+			short
+			 |					
+char------->int
+			 |		
+			long
+			 |				
+			float
+			 |					
+			double
+					
+2) RunTime Polymorphism:-
+---------------------------
+
+Method Overridding
+********************
+
+
+				Vehicle(void getSpec(){..})
+				  |
+  ------------------------------------
+  |               |                 |
+TwVehicle      LmvVehicle		HmvVehicle ---Child specific Behaviour
+  |               |                 |
+void getSpec() void getSpec()   void getSpec()
+{			   {			    {
+  TwVehicle 	 LmvVehicle		   HmvVehicle
+}			   }				}
+  				   	
+
+
+
+
+				Person(void getBehave(){..})
+				  |
+  ------------------------------------
+  |               |                 |
+School         PublicPlace		    Orgnization ---Child specific Behaviour
+  |               |                 |
+void getBehave() void getBehave()   void getBehavec()
+{			   {			    	{
+  Student 	       Citizen		   		Employee
+}			   }					}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		Vehicle(void getSpec(){..})
+		  |
+  ------------------------------------
+  |               |                 |
+TwVehicle      LmvVehicle	HmvVehicle ---Child specific Behaviour
+  |               |                 |
+getTwInfo()    getLmvInfo()    getHmvInfo()
+
+void getSpec() void getSpec()   void getSpec()
+{		{		{
+  TwVehicle 	    LmvVehicle	   HmvVehicle
+}		}		}
+
+
+
+Vehicle vehicle = new TwVehicle();
+
+vehicle.getSpec();
+
+vehicle.getTwInfo();//C.E
+
+
+
+vehicle = new LmvVehicle();
+
+vehicle = new HmvVehicle();
+
+  				   	
+
+
+
+	
+
+		RbiBank(int getROI()---0)
+		  |
+ ------------------------------------
+ |		  |		   |
+AxisBank	SbiBank		KotakBank
+getROI()	getROI()	getROI()
+  10		  6		   12 <-----ROI
+
+	
+
+

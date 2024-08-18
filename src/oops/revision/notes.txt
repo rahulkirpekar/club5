@@ -1,0 +1,51 @@
+			DataType
+			   |
+	-----------------------------------------
+	|					|
+1) Primitive				2) NonPrimitive
+---------------				---------------
+===> boolean
+===> byte					Vehicle(void getSpec(){Gen info})
+===> char					   |
+				-----------------------------------------	
+===> short			|		   |			|
+      | 		    TwVehicle	      LmvVehicle	    HmvVehicle	
+===> int		void getSpec(){..}  void getSpec(){..}    void getSpec(){..}
+      | 		getTwInfo();	    getLmvInfo();	    getHmvInfo();		
+===> long
+      | 		TwVehicle tw = new TwVehicle();	
+===> float		tw.getSpec();
+      | 
+===> double		LmvVehicle lmv = new LmvVehicle();
+			lmv.getSpec();
+int no = 10;	
+// Upcasting		HmvVehicle hmv = new HmvVehicle();
+long value = no;	hmv.getSpec();	
+// Downcasting		
+int no2 = (int)value;	Vehicle v = new TwVehicle();
+			v.getSpec();	
+
+			v = new LmvVehicle();
+			v.getSpec();	
+
+			v = new HmvVehicle();
+			v.getSpec();	
+
+
+					RbiBank(getROI())
+   					   |
+			-----------------------------------------	
+			|		   |			|
+		    AxisBank		BankofBaroda	        Sbi	
+		    getROI()		getROI()		getROI()
+		    getAxisPolicies()   getBankofBarodaPolicies()  getSbiPolicies() 		
+
+
+
+
+
+
+
+
+
+

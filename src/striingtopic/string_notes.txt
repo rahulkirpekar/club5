@@ -1,0 +1,126 @@
+char ---Single Character
+String--Multiple Characters
+String---Built-in class---Methods--operations
+--------------------------------------------------------------------------------
+		Type of Operation in String
+		------------------------------
+			    |	
+	--------------------------------------------
+	|					|
+------------------			------------------
+1) ImmutableWay				2) MutableWay
+------------------			------------------
+==>String(class)			==>StringBuilder(class)
+					==>StringBuffer(class)
+
+1) ImmutableWay	:-
+------------------
+	String(class)----Special Class--[Immutable Behaviour] + [create string By String Literal way]
+	--------------
+
+	*****************************************
+	Two way to create object in String class
+	*****************************************
+
+	1) By String Literal way [RAM---HEAP---SCP("String Constant Pool")]:-
+	--------------------------------------------------------------------
+
+	String name1 = "Royal";
+	String name2 = "Royal";
+	String name3 = "Techno";
+
+	String fullName = name1 + name3;
+
+	// name1.concat(name3);// 
+
+
+	2) By 'new' keyword way [RAM---HEAP] :-
+	-------------------------------------------------
+
+	String name1 = new String("Royal");
+
+	String name2 = new String("Royal");
+
+Object Equality:-
+-----------------
+	
+	1) referenceWay(check only references--two different reference variable if refer on object then TRUE)					
+	----------------------------------------------------------------------------------------------------------------
+		String name1 = "Royal";
+		String name2 = "Royal";
+
+		System.out.println(name1==name2);// true
+
+	
+		String name1 = new String("Royal");
+		String name2 = new String("Royal");
+
+		System.out.println(name1==name2);// false
+
+
+	2) ValueWay(.equals() cheeck only values of String objects)
+	----------------------------------------------------------------				
+		String name1 = "Royal";
+		String name2 = "Royal";
+
+		System.out.println(name1.equals(name2));// true
+
+
+
+
+		String name1 = new String("Royal");
+		String name2 = new String("Royal");
+
+		System.out.println(name1.equals(name2));// true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Java String Methods
+********************
+charAt()
+compareTo()
+concat()
+contains()
+endsWith()
+equals()
+equalsIgnoreCase()
+format()
+getBytes()
+getChars()
+indexOf()
+intern()
+isEmpty()
+join()
+lastIndexOf()
+length()replace()replaceAll()split()startsWith()substring()toCharArray()toLowerCase()toUpperCase()trim()valueOf()
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -9,8 +9,30 @@ public class TechEmployee extends Employee
 
 		salary=0;
 	}
+	public TechEmployee(int id,String name) 
+	{
+		System.out.println("TechEmployee Para -- public TechEmployee(int id,String name) ");
+		this.id=id;
+		this.name=name;
+	}
+	public TechEmployee(int id,String name,int salary) 
+	{
+		System.out.println("TechEmployee Para -- public TechEmployee(int id,String name,int salary) ");
+		this.id=id;
+		this.name=name;
+		this.salary = salary;
+	}
+	public TechEmployee(int id,String name,int salary,String dsgn) 
+	{
+		System.out.println("TechEmployee Para -- public TechEmployee(int id,String name,int salary,String dsgn) ");
+		this.id=id;
+		this.name=name;
+		this.salary = salary;
+		this.dsgn=dsgn;
+	}
 	public TechEmployee(int id,String name,int salary,String dsgn,String orgName) 
 	{
+		System.out.println("TechEmployee Para -- public TechEmployee(int id,String name,int salary,String dsgn,String orgName) ");
 		this.id=id;
 		this.name=name;
 		this.salary = salary;
@@ -23,7 +45,7 @@ public class TechEmployee extends Employee
 	}
 	public static void main(String[] args) 
 	{
-		TechEmployee techEmp = new TechEmployee();
+		TechEmployee techEmp = new TechEmployee(1,"rahul");
 		
 		techEmp.disp();
 	}
