@@ -58,6 +58,70 @@ Example:-						Example:-
 							===> NumberFormateException
 							===> ClassCastException	
 							===>...
+Exception Handling:
+-------------------
+		----> Exception is recoverable By Exception Handling code[try..catch]
+
+	try
+	{
+		// raise---->code exception 
+
+	}catch(ExceptionClassName e)
+	{
+		// handled---catch block 
+		e.printStackTrace();// display---->>[exception error log]	
+	}
+
+
+
+
+
+	Statement----1
+	Statement----2
+	Statement----3
+	Statement----4
+	Statement----5
+
+		10 / 0;// ArithmeticException--(class)---[Code Crashed]---JVM Terminate
+
+	Statement----6
+	Statement----7
+	Statement----8
+	Statement----9
+	Statement----10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Java---7 |
+
+catch(ArithmeticException |NullPointerException | ArrayIndexOutOfBoundsException e) 
+		{
+			System.out.println("In Catch Block ---" + e.getClass().getName() +" Handled By Catch Block");
+			e.printStackTrace();
+		}
+-----------------------------
+Exception Part-1 
+
+https://us02web.zoom.us/rec/share/Lyj_3EPZjq5q4sSdTKJUzgjWjZyGWuXOopf961dbVS5fnRQq7tN9CfQxWxqbmgOh.K9W5bMgZIXY3TK7O 
+Passcode: ck#t2Q5z
+-----------------------------
+
+
+
 							
 
 
