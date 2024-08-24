@@ -1,0 +1,101 @@
+Exception:- Abnormal Scenario.(Exceptional Things.)
+------------
+
+	Statement----1
+	Statement----2
+	Statement----3
+	Statement----4
+	Statement----5
+
+	10 / 0;// ArithmeticException--(class)---[Code Crashed]---JVM Terminate
+
+	Statement----6
+	Statement----7
+	Statement----8
+	Statement----9
+	Statement----10
+-----------------------------------------------------------------------------------------------------------------------------
+					Type of Exception
+					------------------		
+	-----------------------					-----------------------
+	1) Checked Exception					2) UnChecked Exception
+	-----------------------					-----------------------	
+	===> CompileTime Exception				===> RunTime Exception
+	-----------------------					-----------------------	
+	     (Raised By Compiler at CompileTime)		(Raised By JVM at Runtime)
+
+Example:-						Example:-
+---------						---------
+	===>SQLException					===> ArithmeticException
+	===>FileNotFOundException				===> ArrayIndexOufofBoundException
+	===>ClassNotFoundException				===> StringIndexOufofBoundException
+	===>....						===> NullPointerException
+								===> NumberFormateException
+								===> ClassCastException
+								===>...
+----------------------------------------------------------------------------------------------------------------
+
+					Hierarchy of Exception
+					----------------------	
+
+					Object(C)
+					  |
+					Throwable(C)
+					  |
+				----------------------------------------------------------				
+				|							|
+			    Exception(C)					      Error(C)
+			    (recoverable)					     (irrecoverable)--(Not recoved)		
+				|							|
+	    ----------------------------------------------------------		  ===> StackOverflowError	
+	    |--checked Exception				|		  ===> AssertionError		
+===>SQLException  					RuntimeException(C)	
+===>FileNotFOundException					|----UnChecked Exception
+===>ClassNotFoundException				===> ArithmeticException
+===>....						===> ArrayIndexOufofBoundException
+							===> StringIndexOufofBoundException
+							===> NullPointerException	
+							===> NumberFormateException
+							===> ClassCastException	
+							===>...
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

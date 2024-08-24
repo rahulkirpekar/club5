@@ -90,13 +90,12 @@ Object Equality:-
 
 
 
-
-
-
 Java String Methods
 ********************
 charAt()
-compareTo()
+length()
+
+compareTo()	(name1 and name2)---0 / -1 +1
 concat()
 contains()
 endsWith()
@@ -108,9 +107,17 @@ getChars()
 indexOf()
 intern()
 isEmpty()
-join()
+join()		+
 lastIndexOf()
-length()replace()replaceAll()split()startsWith()substring()toCharArray()toLowerCase()toUpperCase()trim()valueOf()
+replace()
+split()
+startsWith()
+substring()
+toCharArray()
+toLowerCase()
+toUpperCase()
+trim()
+valueOf()
 
 
 
