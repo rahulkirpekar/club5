@@ -131,6 +131,125 @@ Passcode: ck#t2Q5z
 
 
 
+	===> Nested try..catch
+
+		try
+		{
+			try
+			{
+			}catch()
+			{
+
+			}
+		}catch()
+		{
+
+		}
+
+	===> finally block
+
+1)
+	try
+	{
+	}catch()
+	{
+	}finally
+	{
+	}
+------------------
+2) 
+	try
+	{
+	}catch()
+	{
+	}catch()
+	{
+	}finally
+	{
+	}
+----------------
+3)
+	try
+	{
+		try
+		{
+		}catch()
+		{
+		}
+	}catch()
+	{
+	}catch()
+	{
+	}finally
+	{
+	}
+--------------------
+4) 
+
+	try---code raise exception
+
+	catch---exception handled
+
+	finally----code execute
+
+	try
+	{
+		// raised exception 
+	}finally
+	{
+		
+	}
+--------------------
+5)
+	try
+	{
+		// raised exception 
+	}catch()
+	{
+		
+	}	
+--------------------
+6) Not Possible 
+
+	catch()
+	{
+	}finally
+	{
+	}
+7) Not Possible 
+
+	try
+	{
+	}
+	catch()
+	{
+	}finally
+	{
+	}finally
+	{
+	}
+--------------------
+8)
+	try
+	{
+		try
+		{
+		}catch()
+		{
+		}finally
+		{
+		}
+	}catch()
+	{
+	}finally
+	{
+	}
+
+------------------
+	===> throw
+	===> throws
+	===> customException
+	===> method overrdding with exception
 
 
 
@@ -154,7 +273,37 @@ Passcode: ck#t2Q5z
 
 
 
+package exceptiontopic.unchecked;
 
+// 1) checked Exception
+//public class InvalidAgeException extends Exception
+
+
+
+// 2) Unchecked Exception
+public class InvalidAgeException extends RuntimeException
+{
+	InvalidAgeException(String msg)
+	{
+		super(msg);
+	}
+}
+
+
+
+Exception Handling with Method Overriding in Java
+*****************************************************
+
+1) If the superclass method does not declare an exception
+	===> subclass overridden method cannot declare the checked exception but it can declare unchecked exception.
+
+
+
+2) If the superclass method declares an exception
+	===> subclass overridden method can declare same, 
+	===> subclass exception 
+	===> or no exception 
+	===> but cannot declare parent exception.
 
 
 
