@@ -289,8 +289,6 @@ public class InvalidAgeException extends RuntimeException
 	}
 }
 
-
-
 Exception Handling with Method Overriding in Java
 *****************************************************
 
@@ -305,10 +303,18 @@ Exception Handling with Method Overriding in Java
 	===> or no exception 
 	===> but cannot declare parent exception.
 
-
-
-
-
+class A
+{
+	void test()
+	{
+	}
+}
+class B extends A
+{
+	void test() throws ArithmeticException
+	{
+	}
+}
 
 
 
