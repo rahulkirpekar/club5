@@ -1,0 +1,27 @@
+--------------------------------------------
+IO---InputStream(read) / OutputStream(write)
+--------------------------------------------
+
+
+
+Data write ways:-
+-----------------
+	1) Byte orientedway:-
+	----------------------
+		===> String
+				FileOutputStream--write
+				FileInputStream---read
+		===> USD(Objects)
+
+	2) character orientedway:-
+	---------------------------
+		===> String		
+			==> FileWriter(write)
+			==> FileReader(read)
+
+
+
+
+
+
+		

@@ -1,0 +1,100 @@
+show databases;
+
+create table student
+(
+     rno int PRIMARY KEY AUTO_INCREMENT,
+     name varchar(25),
+     std  varchar(25),
+     marks varchar(25)
+);
+
+desc student;
+
+select * from student;
+
+
+JDBC:- "Java to Database Connectivity"
+------
+	1) Database installed--MYSQL
+	2) JDK
+	3) eclipse
+-----------------------------------------------------------------------------------------
+		Java Programme---------------->Database Connection
+-----------------------------------------------------------------------------------------
+
+Database-[MySQL/Oracle/Posgress/MSSql server/...]
+
+	URLNAME = "jdbc:mysql://localhost:3306/databasename";
+	DRIVERCLASS= "com.mysql.cj.jdbc.Driver";
+	USERNAME = "root";
+	PASSWORD = "root";
+	
+		MySQL		Oracle		Posgress	MSSQL-Server
+		 |		  |		   |		  |	
+	     Driver.class	Driver.class	Driver.class	Driver.class
+		 |		  |		   |		  |	
+	  mysql-connector.jar  odbc.jar          *.jar		*.jar
+	
+
+
+
+
+src
+ |
+ --jdbc
+    |
+     --bean
+     --dao
+     --util
+	|
+	--DBConnection.java
+	      |	
+	public class DBConnection
+	{
+		public static void getConnection()
+		{
+		}
+	}
+	---------------------------------------------------------------------------------------------------------------------
+	
+	jdbc
+	bean
+
+	dao
+	
+	util
+		DBConnection.java
+----------------------------------------------------------------------------------------------
+DAO - Data Access Object
+
+	StudentDao----insert,update,delete,getAlllrecords
+	  |
+	Student Table 	
+----------------------------------------------------------------------------------------------
+
+		Type of Statement in jDBC
+		--------------------------
+
+		Statement----[executeUpdate()--int , executeQuery()---ResultSet---ressult as multiple-rows]		
+		  |
+	    PreparedStatement--[executeUpdate()--int , executeQuery()---ResultSet---ressult as multiple-rows]				
+
+	
+	1) By Statement		2) By PreparedStatement		3) CallableStatment
+	------------------	------------------------	------------------------
+	(CRUD)			(CRUD)				Triggers , Procedures,Function
+	  |			  |
+	---------------------------------------
+	INSERT			INSERT
+	UPDATE			UPDATE
+	DELETE			DELETE
+	---------------------------------------
+	executeUpdate()		executeUpdate()---int
+
+
+
+	SELECT			SELECT
+	---------------------------------------
+executeQuery()---ResultSet	executeQuery()---ResultSet
+
+	

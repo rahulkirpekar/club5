@@ -1,0 +1,53 @@
+Array Limitations:-
+--------------------
+		int a[] = new int[500000000000000];
+
+		scan a array
+	1) SIZE
+	2) TYPE
+
+-----------------------
+Collection Framework:-
+-----------------------
+			Hierarchy of Collection--[import java.util.*;]
+			-----------------------
+
+
+				Object(Cosmic Super)
+				   |										
+				Iterable(I)----------------------------------------------------------------------
+				   |										|
+				Collection(I)									|		
+				   |										|
+				   |Data--value									|
+				   |										|(Key,Value)
+	---------------------------------------------------------						|
+	|			   |				|						|
+      List(I)			Set(I)			     Queue(I)					       Map(I)--[K,V]
+	|			   |				|<---Abstract class				|
+AbstractList(AC)	      AbstractSet(AC)		 AbstractQueue(AC)				  AbstractMap(AC)
+	|			   |				|						|		
+--ArrayList(C)		--HashSet(C)			--PriorityQueue(C)				--HashMap(C)
+--LinkedList(C)		--LinkedHashSet(C)								--LinkedHashMap(C)
+--Vector(C)		--TreeSet(C)									--TreeMap(C)
+
+
+
+
+Sorting Techniques
+
+1) Comparable(I)
+2) Comparator(I)
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+Innerclass:-
+------------
+	// Outer class					// Nested class
+	class A						class A
+	{						{
+		private int no;					private int no;				
+		// Innerclass					// Nestedclass-->Innerclass
+		class B						static class B
+		{						{
+
+		}						}
+	}						}	
+--------------------------------------------------------------------------------------------------
+Type of Innerclass:-
+--------------------
+1) Member Innerclass(mi)
+2) Anonymous Innerclass(ai)
+3) Local Innerclass(li)
+4) Nested Innerclass(ni)

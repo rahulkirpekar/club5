@@ -1,0 +1,84 @@
+MultiThreadding:-
+----------------
+
+12-1	EE
+
+11-12	DD
+
+10-11	CC
+
+9-10	BB	
+
+	AA	
+8-9	A
+
+
+
+
+
+	Thread-------[Process------>Subprocess---Thread]
+
+
+		8-9    9-10    10-11   11-12
+		AA	BB	CC	DD	EE<---Faculties Name	
+		|	|	|	|
+		A	B	C	D	E<----className
+
+
+		8-9    8-9      8-9    8-9	8-9
+		AA	BB	CC	DD	EE<---Faculties Name(Thread)	
+		|	|	|	|
+		A	B	C	D	E<----className(CallStack)
+
+
+Hardware---[Processor + RAM]
+
+			Way to create Thread in Java
+			----------------------------
+
+1) By extending Thread class:-
+--------------------------------
+
+	Runnable(I)---run()
+	  |
+	Thread(c)---run(){job null}------start()----method
+	  |
+	MyThread(c)---run(){..Thread...job...}----start()
+	
+
+
+
+	5 Table-----5 thread----5 time	
+
+
+
+
+
+
+
+2) By implementing Runnable interface:-
+------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

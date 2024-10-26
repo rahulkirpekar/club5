@@ -8,9 +8,9 @@ import java.util.Scanner;
 public class Student 
 {
 	// 1) Dm's--Optional
-	int rno;
-	String name;
-	int std;
+	private int rno;
+	private String name;
+	private int std;
 	
 	// 2) mf's--Optional
 	public void scanData() 
@@ -28,5 +28,28 @@ public class Student
 	{
 		System.out.println(rno+" " + name+" " + std);
 	}
-	
+	public int getRno() 
+	{
+		return rno;
+	}
+	public void setRno(int rno) 
+	{
+		this.rno = rno;
+	}
+	public String getName() 
+	{
+		return name;
+	}
+	public void setName(String name) 
+	{
+		this.name = name;
+	}
+	public int getStd() 
+	{
+		return std;
+	}
+	public void setStd(int std) 
+	{
+		this.std = std;
+	}
 }
